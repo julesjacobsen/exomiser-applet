@@ -1,0 +1,110 @@
+{
+  "name": "exomiser",
+  "title": "The Exomiser - A Tool to Annotate and Prioritize Exome Variants",
+  "summary": "The Exomiser is a Java program that finds potential disease-causing variants from whole-exome or whole-genome sequencing data.",
+  "dxapi": "1.0.0",
+  "version": "first",
+  "inputSpec": [
+    {
+      "name": "docker_image",
+      "label": "exomiser docker image (the tar.gz snapshot)",
+      "class": "file",  
+      "optional": false,
+      "patterns": [
+        "*"
+      ],
+      "help": ""
+    },    	
+    {
+      "name": "genome_data",
+      "label": "exomiser genome data eg. 2406_hg38.zip",
+      "class": "file",
+      "optional": false,
+      "patterns": [
+        "*"
+      ],
+      "help": ""
+    },
+    {
+      "name": "phenotype_data",
+      "label": "exomiser phenotype data eg. 2406_phenotype.zip",
+      "class": "file",
+      "optional": false,
+      "patterns": [
+        "*"
+      ],
+      "help": ""
+    },
+    {
+      "name": "config",
+      "label": "config file for exomiser, called application.properties",
+      "class": "file",
+      "optional": false,
+      "patterns": [
+        "*"
+      ],
+      "help": ""
+    }, 
+   {
+      "name": "analysis_file",
+      "label": "exomiser analysis file in yml format",
+      "class": "file",
+      "optional": false,
+      "patterns": [
+        "*"
+      ],
+      "help": ""
+    },
+    {
+      "name": "vcf",
+      "label": "variant calling file from WGS or WES.",
+      "class": "file",
+      "optional": false,
+      "patterns": [
+        "*"
+      ],
+      "help": ""
+    }
+  ],
+  "outputSpec": [
+    {
+      "name": "html",
+      "label": "html file of results.",
+      "class": "file",
+      "patterns": [
+        "*"
+      ],
+      "help": ""
+    },
+    {
+      "name": "json",
+      "label": "json file of results.",
+      "class": "file",
+      "patterns": [
+        "*"
+      ],
+      "help": ""
+    }
+  ],
+  "runSpec": {
+    "timeoutPolicy": {
+      "*": {
+        "hours": 48
+      }
+    },
+    "interpreter": "bash",
+    "file": "src/exomiser.sh",
+    "distribution": "Ubuntu",
+    "release": "24.04",
+    "version": "0"
+  },
+  "regionalOptions": {
+    "aws:eu-west-2": {
+      "systemRequirements": {
+        "*": {
+          "instanceType": "mem2_ssd2_v2_x4"
+        }
+      }
+    }
+  }
+}
