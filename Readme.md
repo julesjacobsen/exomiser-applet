@@ -116,7 +116,10 @@ The input is specified with -i<name of input>
 The same thing can be done on the UI
 
 
+## Future options: 
 
+- Creating a workflow with WDL.
+- Creating an App for all UKB users. 
 
 
 ### Resources
