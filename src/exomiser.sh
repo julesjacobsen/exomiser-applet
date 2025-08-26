@@ -34,6 +34,9 @@ main() {
     echo "Data contents:"
     ls -lh /exomiser-data
 
+    # Fixing permissions so Exomiser's 'nonroot' user can read   
+    chmod -R a+rX /exomiser-data
+
     # Fill in your application code here.
     #
     # To report any recognized errors in the correct format in
