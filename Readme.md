@@ -35,11 +35,11 @@ Random participant with DCM diagnosis:
 
 #### UI:
 
-to do. 
+to do. Add screenshot. 
 
 #### CLI:
 
-to do. 
+to do. Add example line.
 
 ## Creating the Exomiser Applet on UK Biobank DNAnexus
 
@@ -58,54 +58,54 @@ JSON file
 
 
 ### Steps to create the applet: 
-1. Creating a snapshot of the Docker image with ttyd
-(video)
 
-2. Generating the API token to work on the local machine. 
+**1. Creating a snapshot of the Docker image with ttyd**
+
+(video)
+To do. Add steps. 
+
+**2. Generating the API token to work on the local machine.**
 
 API token to work on the local machine: 
-You create the token in your profile. 
-To log in from your CLI (example token):
-dx login --token TavIQyXjZjzXrfvbeSH1ojHKBkox2YoC
+- You create the token in your profile. 
+- To log in from your CLI (example token): `dx login --token TavIQyXjZjzXrfvbeSH1ojHKBkox2YoC`
+- To check you are in the right place: `dx ls`
+- To move directory, it’s the same commands, just with dx in front: `dx cd <directory name>`
 
-To check you are in the right place: 
-dx ls
-Shows you the directory you are in. 
-To move directory, it’s the same commands, just with dx in front: 
-dx cd <directory name>
+**3. Creating a skeleton applet.**
 
-3. Creating a skeleton applet. 
+Applet skeleton was created with the command `dx-app-wizard`
 
-Applet skeleton was created with dx-app-wizard
+To do: add the skeleton. 
 
+Editing the applet metadata file:
 
-Editing the applet metadata file
-
-This is the file that defines all the inputs, outputs, and specifications of the applet. 
-dxapp.json
-
-The system requirements I have selected:
+- This is the file that defines all the inputs, outputs, and specifications of the applet: `dxapp.json`
+  - You need to specify the resources needed by your applet. This is what I have specified so far (Cores __, Memory (GiB) __, Storage (GB) __):
+```
 {
   systemRequirements: {
-    "main": {"instanceType": "mem2_hdd2_x2"}
+    "main": {"instanceType": "________"}
   },
   [...]
 }
+```
+- `src/` is where the script for your applet is.
 
 
-4. Build the applet 
+**4. Build the applet** 
 
-Building the applet from the local machine to UKBiobank 
-The first build: dx build exomiser
-To edit/replace previous builds: dx build exomiser -f 
-This builds the applet. -f overwrites the current applet in the project. 
-You cannot debug on your local machine. You have to run the app on the RAP to check it’s working. 
+Building the applet from the local machine to UKBiobank: 
+- The first build: `dx build exomiser`
+- To edit/replace previous builds: `dx build exomiser -f`
+  - This builds the applet. -f overwrites the current applet in the project. 
+- You cannot debug on your local machine. You have to run the app on the RAP to check it’s working. 
 If you want to upload example/test files to debug the applet: 
 dx upload application.properties
 dx upload Pfeiffer.vcf.gz
 Uploading the same file twice does not replace the original one. It's just a new file with the same name. 
 
-5. Launching the applet 
+**5. Launching the applet** 
 
 You can launch the applet either on the command line or in the UI. 
 In your command line: 
@@ -126,8 +126,10 @@ The same thing can be done on the UI
 Videos: 
 - [Video 1](https://www.youtube.com/watch?v=aOP_iSZpR6g&ab_channel=DNAnexus)
 - [Video 2](https://www.youtube.com/watch?v=LC3JcBYj-Mo&list=PLRkZ0Fz-n3Z6ku1U9V_C2bV5kqafRwrY7&index=1&ab_channel=DNAnexus)
-Example applets: 
-- [Example 1](https://github.com/dnanexus/dnanexus-example-applets/blob/master/Tutorials/bash/samtools_count_distr_chr_region_sh/src/code.sh) (Different way to specify output folder)
+  
+Examples: 
+- [Example applet](https://github.com/dnanexus/dnanexus-example-applets/blob/master/Tutorials/bash/samtools_count_distr_chr_region_sh/src/code.sh) (Different way to specify output folder)
+
 Documentation: 
 - [Intro](https://documentation.dnanexus.com/developer/apps/intro-to-building-apps)
 - [Specs](https://documentation.dnanexus.com/developer/api/running-analyses/io-and-run-specifications#run-specification)
