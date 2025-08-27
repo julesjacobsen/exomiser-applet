@@ -35,18 +35,19 @@ main() {
     docker load < docker_image
     
     outdir=/home/dnanexus/results
-    mkdir -p "$outdir"    
+    mkdir -p "$outdir"
+    chmod 777 "$outdir"
 
     echo "Running Exomiser"
     docker run --rm \
         -v /home/dnanexus:/home/dnanexus \
-        -v /home/dnanexus/results:/app/classes/results \
+        -v /home/dnanexus/results:/results \
         -v /exomiser-data:/exomiser-data \
         exomiser/exomiser-cli:14.0.0-distroless \
         --analysis /home/dnanexus/analysis_file \
         --vcf /home/dnanexus/sample.vcf.gz \
         --assembly hg38 \
-        --output-directory /home/dnanexus/results \
+        --output-directory /results \
         --exomiser.data-directory=/exomiser-data \
         --exomiser.hg38.data-version=2502 \
         --exomiser.phenotype.data-version=2502
