@@ -43,9 +43,15 @@ main() {
         -v /exomiser-data:/exomiser-data \
         exomiser/exomiser-cli:14.0.0-distroless \
         --analysis=/home/dnanexus/analysis_file \
-        --output-directory=/home/dnanexus/results \
+        --vcf /home/dnanexus/vcf \
+        --assembly hg38 \
+        --output-directory /home/dnanexus/results \
         --exomiser.data-directory=/exomiser-data \
-        --spring.config.location=/home/dnanexus/application.properties
+        --exomiser.hg38.data-version=2502 \
+        --exomiser.phenotype.data-version=2502
+
+
+#        --spring.config.location=/home/dnanexus/application.properties
 
     html=$(dx upload "$outdir"/*.html --brief)
     json=$(dx upload "$outdir"/*.json --brief)
