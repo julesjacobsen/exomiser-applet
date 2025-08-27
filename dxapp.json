@@ -56,7 +56,7 @@
       "help": ""
     },
     {
-      "name": "vcf",
+      "name": "sample_vcf_gz",
       "label": "variant calling file from WGS or WES.",
       "class": "file",
       "optional": false,

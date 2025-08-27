@@ -5,7 +5,7 @@ main() {
 
     echo "Value of Exomiser Docker image: '$docker_image'"
     echo "Value of analysis_file: '$analysis_file'"
-    echo "Value of vcf: '$vcf'"
+    echo "Value of sample_vcf_gz: '$sample_vcf_gz'"
     echo "Value of config: '$config'"
     echo "Value of genome_data: '$genome_data'"
     echo "Value of phenotype_data: '$phenotype_data'" 
@@ -13,7 +13,7 @@ main() {
     dx download "$docker_image" -o docker_image
     dx download "$config" -o application.properties
     dx download "$analysis_file" -o analysis_file
-    dx download "$vcf" -o sample.vcf.gz
+    dx download "$sample_vcf_gz" -o sample.vcf.gz
     dx download "$genome_data" -o genome_data.zip
     dx download "$phenotype_data" -o phenotype_data.zip
 
@@ -38,7 +38,7 @@ main() {
     mkdir -p "$outdir"    
 
     echo "Running Exomiser"
-    docker run \
+    docker run --rm \
         -v /home/dnanexus:/home/dnanexus \
         -v /home/dnanexus/results:/app/classes/results \
         -v /exomiser-data:/exomiser-data \
@@ -51,8 +51,9 @@ main() {
         --exomiser.hg38.data-version=2502 \
         --exomiser.phenotype.data-version=2502
 
-
-#        --spring.config.location=/home/dnanexus/application.properties
+# --vcf /home/dnanexus/sample.vcf.gz   
+# --assembly hg38 
+# --spring.config.location=/home/dnanexus/application.properties
 
     html=$(dx upload "$outdir"/*.html --brief)
     json=$(dx upload "$outdir"/*.json --brief)
