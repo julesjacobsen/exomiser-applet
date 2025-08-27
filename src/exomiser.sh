@@ -13,7 +13,7 @@ main() {
     dx download "$docker_image" -o docker_image
     dx download "$config" -o application.properties
     dx download "$analysis_file" -o analysis_file
-    dx download "$vcf" -o vcf
+    dx download "$vcf" -o sample.vcf.gz
     dx download "$genome_data" -o genome_data.zip
     dx download "$phenotype_data" -o phenotype_data.zip
 
@@ -40,10 +40,11 @@ main() {
     echo "Running Exomiser"
     docker run \
         -v /home/dnanexus:/home/dnanexus \
+        -v /home/dnanexus/results:/app/classes/results \
         -v /exomiser-data:/exomiser-data \
         exomiser/exomiser-cli:14.0.0-distroless \
-        --analysis=/home/dnanexus/analysis_file \
-        --vcf /home/dnanexus/vcf \
+        --analysis /home/dnanexus/analysis_file \
+        --vcf /home/dnanexus/sample.vcf.gz \
         --assembly hg38 \
         --output-directory /home/dnanexus/results \
         --exomiser.data-directory=/exomiser-data \
