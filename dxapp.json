@@ -14,6 +14,26 @@
         "*"
       ],
       "help": ""
+    },
+    {
+      "name": "genome_data",
+      "label": "exomiser genome data eg. 2406_hg38.zip",
+      "class": "file",
+      "optional": false,
+      "patterns": [
+        "*"
+      ],
+      "help": ""
+    },
+    {
+      "name": "phenotype_data",
+      "label": "exomiser phenotype data eg. 2406_phenotype.zip",
+      "class": "file",
+      "optional": false,
+      "patterns": [
+        "*"
+      ],
+      "help": ""
     },    	
    {
       "name": "config",

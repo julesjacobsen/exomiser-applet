@@ -1,6 +1,5 @@
 #!/bin/bash
 # exomiser first
-set -e -x -o pipefail
 
 main() {
 
@@ -8,31 +7,31 @@ main() {
     echo "Value of analysis_file: '$analysis_file'"
     echo "Value of vcf: '$vcf'"
     echo "Value of config: '$config'"
-#    echo "Value of genome_data (dir): '$genome_data'"
-#    echo "Value of phenotype_data (dir): '$phenotype_data'" 
+    echo "Value of genome_data: '$genome_data'"
+    echo "Value of phenotype_data: '$phenotype_data'" 
 
     dx download "$docker_image" -o docker_image
     dx download "$config" -o application.properties
     dx download "$analysis_file" -o analysis_file
     dx download "$vcf" -o vcf
-#    dx download "$genome_data" -o genome_data.zip
-#    dx download "$phenotype_data" -o phenotype_data.zip
-  
-#    echo "Downloading genome and phenotype directories"
-#    dx download "$genome_data" -o genome_data --recursive
-#    dx download "$phenotype_data" -o phenotype_data --recursive
+    dx download "$genome_data" -o genome_data.zip
+    dx download "$phenotype_data" -o phenotype_data.zip
 
-#    echo "Preparing Exomiser data directory"
-#    mkdir -p /exomiser-data 
-#    cp -r genome_data/* /exomiser-data/
-#    cp -r phenotype_data/* /exomiser-data/
+    echo "Preparing Exomiser data"
+    mkdir -p /exomiser-data
 
-    echo "Exomiser data in resources directory:"
-    ls -lh /resources
+    echo "Unzipping genome data"
+    unzip -q genome_data.zip -d /exomiser-data
+
+    echo "Unzipping phenotype data" 
+    unzip -q phenotype_data.zip -d /exomiser-data
+
+    echo "Data contents:"
+    ls -lh /exomiser-data
 
     # Fixing permissions so Exomiser's 'nonroot' user can read   
-    chmod -R a+rX /resources
-    
+    chmod -R a+rX /exomiser-data
+
     docker load < docker_image
     
     outdir=/home/dnanexus/results
@@ -41,14 +40,13 @@ main() {
     echo "Running Exomiser"
     docker run --rm \
         -v /home/dnanexus:/home/dnanexus \
-        -v /resources:/exomiser-data \
+        -v /exomiser-data:/exomiser-data \
         exomiser/exomiser-cli:14.0.0-distroless \
         --analysis /home/dnanexus/analysis_file \
         --output-directory "$outdir" \
         --exomiser.data-directory=/exomiser-data \
         --spring.config.location=/home/dnanexus/application.properties
 
-    echo "Uploading results"
     html=$(dx upload "$outdir"/*.html --brief)
     json=$(dx upload "$outdir"/*.json --brief)
 
