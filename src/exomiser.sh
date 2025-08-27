@@ -42,8 +42,9 @@ main() {
         -v /home/dnanexus:/home/dnanexus \
         -v /exomiser-data:/exomiser-data \
         exomiser/exomiser-cli:14.0.0-distroless \
+        java -jar /app/exomiser-cli.jar \
         --analysis /home/dnanexus/analysis_file \
-        --output-directory "$outdir" \
+        --output-directory /home/dnanexus/results \
         --exomiser.data-directory=/exomiser-data \
         --spring.config.location=/home/dnanexus/application.properties
 
