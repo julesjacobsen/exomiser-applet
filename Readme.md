@@ -22,12 +22,12 @@ For more info, see https://documentation.dnanexus.com/developer.
 
 ## Using the applet: 
 
-The applet can be used on the command line (with dx) or on the UI. 
+The applet can be used on the command line (with [dx-toolkit](https://github.com/dnanexus/dx-toolkit)) or on the UI. 
 
 ### Example with DCM diagnosed UKB individual: 
 
 Random participant with DCM diagnosis:
-- 1001904 participant ID
+- 1001904 participant ID (this ID is specific to our project)
 - Exome: 
   - project-GyXz9Q0Jx00kK6G9BXyfV73Z:/Bulk/Exome sequences/Exome OQFE variant call files (VCFs)/10/1001904_23141_0_0.g.vcf.gz
   - file-G2z95QQJykJzKfzB2J9q69gP
@@ -45,16 +45,8 @@ to do. Add example line.
 
 In a nutshell:
 - The applet is developed on your local machine. It is uploaded to the RAP to debug and run. To edit the applet, you do it again on your machine and reupload to the RAP and run it again. 
-- The applet requires 6 inputs: 
-Exomiser docker snapshot
-Genome data
-Phenotype data 
-Config file
-Analysis file
-VCF 
-- Outputs (for now):
-Html file 
-JSON file 
+- The applet requires 6 inputs: Exomiser docker snapshot, Genome data, Phenotype data, Config file, Analysis file, VCF 
+- Outputs (for now): Html file, JSON file 
 
 
 ### Steps to create the applet: 
@@ -108,12 +100,15 @@ Uploading the same file twice does not replace the original one. It's just a new
 **5. Launching the applet** 
 
 You can launch the applet either on the command line or in the UI. 
+
 In your command line: 
+```
 dx run exomiser -idocker_image=exomiser_image.tar.gz -iconfig=application.properties -iphenopacket=test-analysis-exome.yml -ivcf=Pfeiffer.vcf.gz -iassembly=hg19 
+```
 
+The input is specified with -i <name of input>
 
-The input is specified with -i<name of input>
-The same thing can be done on the UI
+The same thing can be done on the UI. To do: add screenshot.
 
 
 ## Future options: 
