@@ -110,6 +110,11 @@ The input is specified with -i <name of input>
 
 The same thing can be done on the UI. To do: add screenshot.
 
+## To Dos:
+
+- Add option for more outputs, esp. TSV
+- Fix results folder - atm the output goes into the working directory.
+
 
 ## Future options: 
 
