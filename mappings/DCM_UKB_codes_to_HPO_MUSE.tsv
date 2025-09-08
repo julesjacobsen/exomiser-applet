@@ -1,0 +1,38 @@
+muse_code	muse_description	hpo_term	hpo_id
+101	1st degree AV block	First degree atrioventricular block	HP:0011705
+104	2nd degree AV block (Mobitz II)	Second degree atrioventricular block	HP:0011706
+106	with complete heart block	Complete heart block	HP:0001709
+106	with complete heart block	Complete heart block with narrow QRS complexes	HP:0005178
+106	with complete heart block	Complete heart block with broad QRS complexes	HP:0005178
+107	with variable AV block	Second degree atrioventricular block 	HP:0011706
+113	with sinus pause	Second degree atrioventricular block 	HP:0011706
+141	with 2:1 AV conduction	2:1 atrioventricular block 	HP:0034305
+142	with 3:1 AV conduction	Second degree atrioventricular block 	HP:0011706
+143	with 4:1 AV conduction	Second degree atrioventricular block	HP:0011706
+144	with 5:1 AV conduction	Second degree atrioventricular block	HP:0011706
+285	with sinus arrest or transient AV block 	Atrioventricular block	HP:0001678
+288	Atrial flutter with 2 to 1 block	Atrial flutter	HP:0004749
+288	Atrial flutter with 2 to 1 block	2:1 atrioventricular block 	HP:0034305
+161	Atrial fibrillation	Atrial fibrillation	HP:0005110
+162	Atrial flutter	Atrial flutter	HP:0004749
+273	Atrial flutter	Atrial flutter	HP:0004749
+281	Complete heart block	Third degree atrioventricular block 	HP:0001709
+300	Ventricular pre-excitation, WPW pattern type A	Wolff-Parkinson-White syndrome	HP:0001716
+302	Ventricular pre-excitation, WPW pattern type B	Wolff-Parkinson-White syndrome	HP:0001716
+303	with fusion or intermittent ventricular preexcitation	Wolff-Parkinson-White syndrome	HP:0001716
+304	Wolff-Parkinson-White	Wolff-Parkinson-White syndrome	HP:0001716
+371	Abnormal left axis deviation	Left axis deviation	HP:0033568
+372	Left axis deviation	Left axis deviation	HP:0033568
+440	Right bundle branch block	Right bundle branch block	HP:0011712
+460	Left bundle branch block	Left bundle branch block	HP:0011713
+470	Left anterior fascicular block	Left anterior fascicular block	HP:0011711
+471	Left posterior fascicular block	Left posterior fascicular block	HP:0005172
+478	(RBBB and left anterior fascicular block)	Right bundle branch block	HP:0011712
+478	(RBBB and left anterior fascicular block)	Left anterior fascicular block	HP:0011711
+479	(RBBB and left posterior fascicular block)	Right bundle branch block	HP:0011712
+479	(RBBB and left posterior fascicular block)	Left posterior fascicular block	HP:0005172
+480	*** Bifascicular block ***	Right bundle branch block	HP:0011712
+480	*** Bifascicular block ***	Left axis deviation	HP:0033568
+481	Trifascicular block	Trifascicular block	HP:0011715
+482	Nonspecific intraventricular block	Prolonged QRS complex 	HP:0006677
+487	Nonspecific intraventricular conduction delay	Prolonged QRS complex 	HP:0006677

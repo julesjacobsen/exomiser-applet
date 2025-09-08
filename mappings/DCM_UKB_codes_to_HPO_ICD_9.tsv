@@ -1,0 +1,14 @@
+icd9_code	icd9_description	hpo_term	hpo_id
+4260	Atrioventricular block, complete	Third degree atrioventricular block	HP:0001709
+4261	Atrioventricular block, other and unspecified	Atrioventricular block	HP:0004749
+4263	 Other left bundle branch block	Left bundle branch block	HP:0011713
+4264	 Right bundle branch block	Left bundle branch block	HP:0011713
+4265	Bundle branch block other and unspecified	Right bundle branch block	HP:0011712
+4266	Other heart block	Heart block	HP:0012722
+4267	Anomalous atrioventricular excitation	Abnormal atrioventricular conduction	HP:0005150
+4271	Paroxysmal ventricular tachycardia	Paroxysmal supraventricular tachycardia 	HP:0004763
+4273	Atrial fibrillation and flutter	Atrial fibrillation	HP:0005110
+4273	Atrial fibrillation and flutter	Atrial flutter	HP:0004749
+4274	Ventricular fibrillation and flutter	Ventricular fibrillation	HP:0001663
+4274	Ventricular fibrillation and flutter	Ventricular flutter 	HP:0011841
+4275	Cardiac arrest	Cardiac arrest	HP:0001695

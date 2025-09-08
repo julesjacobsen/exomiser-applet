@@ -1,0 +1,102 @@
+icd10_code	icd10_description	hpo_term	hpo_id
+E10-14	Diabetes mellitus	Diabetes mellitus	HP:0000819
+E10	Type 1 diabetes mellitus	Type I diabetes mellitus	HP:0100651
+E11	Type 2 diabetes mellitus	Type II diabetes mellitus	HP:0005978
+E12	Malnutrition-related diabetes mellitus	Diabetes mellitus	HP:0000819
+E13	Other specified diabetes mellitus	Diabetes mellitus	HP:0000819
+E14	Unspecified diabetes mellitus	Diabetes mellitus	HP:0000819
+I05-08	Chronic rheumatic heart diseases	Valvular heart disease	HP:0001654
+I05	Rheumatic mitral valve diseases	Valvular heart disease	HP:0001654
+I06	Rheumatic aortic valve diseases	Valvular heart disease	HP:0001654
+I07	Rheumatic tricuspid valve diseases	Valvular heart disease	HP:0001654
+I08	Multiple valve diseases	Valvular heart disease	HP:0001654
+I09.1	Rheumatic diseases of endocardium, valve unspecified	Valvular heart disease	HP:0001654
+I09.1	Rheumatic diseases of endocardium, valve unspecified	Abnormal endocardium morphology	HP:0004306
+I09.8	Other specified rheumatic heart diseases	Valvular heart disease	HP:0001654
+I10-15	Hypertensive diseases	Hypertension	HP:0000822
+I11.0	Hypertensive heart disease with (congestive) heart failure	Congestive heart failure	HP:0001635
+I11.0	Hypertensive heart disease with (congestive) heart failure	Hypertension	HP:0000822
+I13.0	Hypertensive heart and renal disease with (congestive) heart failure	Congestive heart failure	HP:0001635
+I13.0	Hypertensive heart and renal disease with (congestive) heart failure	Hypertension	HP:0000822
+I13.0	Hypertensive heart and renal disease with (congestive) heart failure	Abnormal renal physiology 	HP:0012211
+I13.2	Hypertensive heart and renal disease with both (congestive) heart failure and renal failure	Congestive heart failure	HP:0001635
+I13.2	Hypertensive heart and renal disease with both (congestive) heart failure and renal failure	Hypertension	HP:0000822
+I13.2	Hypertensive heart and renal disease with both (congestive) heart failure and renal failure	Abnormal renal physiology 	HP:0012211
+I13.2	Hypertensive heart and renal disease with both (congestive) heart failure and renal failure	Renal insufficiency	HP:0000083
+I15	Secondary hypertension	Hypertension	HP:0000822
+I21.X	Acute myocardial infarction	Myocardial infarction	HP:0001658
+I22.X	Subsequent myocardial infarction	Myocardial infarction	HP:0001658
+I23.X	Certain current complications following acute myocardial infarction	Myocardial infarction	HP:0001658
+I24.1	Dressler's syndrome	Pericarditis	HP:0001701
+I25.2	Old myocardial infarction	Myocardial infarction	HP:0001658
+I25.5	Ischemic cardiomyopathy	Cardiomyopathy	HP:0001638
+I34-37	Nonrheumatic valve disorders	Valvular heart disease	HP:0001654
+I34	Nonrheumatic mitral valve disorders	Valvular heart disease	HP:0001654
+I35	Nonrheumatic aortic valve disorders	Valvular heart disease	HP:0001654
+I36	Nonrheumatic tricuspid valve disorders	Valvular heart disease	HP:0001654
+I37	Pulmonary valve disorders	Valvular heart disease	HP:0001654
+I39.0-39.4	Endocarditis and heart valve disorders in diseases classified elsewhere	Valvular heart disease	HP:0001654
+I39.0-39.4	Endocarditis and heart valve disorders in diseases classified elsewhere	Endocarditis 	HP:0100584
+I39.0-39.4	Endocarditis and heart valve disorders in diseases classified elsewhere	Bacterial endocarditis 	HP:0006689
+I39.0-39.4	Endocarditis and heart valve disorders in diseases classified elsewhere	Libman-Sacks lesions 	HP:0011714
+I39.0	Mitral valve disorders in diseases classified elsewhere	Endocarditis 	HP:0100584
+I39.0	Mitral valve disorders in diseases classified elsewhere	Valvular heart disease	HP:0001654
+I39.0	Mitral valve disorders in diseases classified elsewhere	Libman-Sacks lesions 	HP:0011714
+I39.1	Aortic valve disorders in diseases classified elsewhere	Valvular heart disease	HP:0001654
+I39.1	Aortic valve disorders in diseases classified elsewhere	Endocarditis 	HP:0100584
+I39.2	Tricuspid valve disorders in diseases classified elsewhere	Valvular heart disease	HP:0001654
+I39.2	Tricuspid valve disorders in diseases classified elsewhere	Endocarditis 	HP:0100584
+I39.3	Pulmonary valve disorders in diseases classified elsewhere	Valvular heart disease	HP:0001654
+I39.3	Pulmonary valve disorders in diseases classified elsewhere	Endocarditis 	HP:0100584
+I39.4	Multiple valve disorders in diseases classified elsewhere	Valvular heart disease	HP:0001654
+I39.4	Multiple valve disorders in diseases classified elsewhere	Endocarditis 	HP:0100584
+I42.0	Dilated cardiomyopathy	Dilated cardiomyopathy	HP:0001644
+I42.5	Other restrictive cardiomyopathy	Cardiomyopathy	HP:0001638
+I42.5	Other restrictive cardiomyopathy	Restrictive cardiomyopathy 	HP:0001723
+I42.8	Other cardiomyopathies	Cardiomyopathy	HP:0001638
+I42.8	Other cardiomyopathies	Noncompaction cardiomyopathy 	HP:0012817
+I42.8	Other cardiomyopathies	Atrial cardiomyopathy	HP:0200127
+I42.8	Other cardiomyopathies	Histiocytoid cardiomyopathy	HP:0005152
+I42.8	Other cardiomyopathies	Right ventricular cardiomyopathy 	HP:0011663
+I42.8	Other cardiomyopathies	Takotsubo cardiomyopathy 	HP:0011665
+I42.9	Cardiomyopathy, unspecified	Cardiomyopathy	HP:0001638
+I44	Atrioventricular and left bundle-branch block	Atrioventricular block	HP:0001678
+I44	Atrioventricular and left bundle-branch block	Left bundle branch block 	HP:0011713
+I44.0	Atrioventricular block, first degree	First degree atrioventricular block	HP:0011705
+I44.1	Atrioventricular block, second degree	Second degree atrioventricular block	HP:0011706
+I44.2	Atrioventricular block, complete	Third degree atrioventricular block	HP:0001709
+I44.3	Other and unspecified atrioventricular block	Atrioventricular block	HP:0001678
+I44.5	Left posterior fascicular block	Left posterior fascicular block 	HP:0005172
+I44.4	Left anterior fascicular block	Left anterior fascicular block 	HP:0011711
+I44.6	Other and unspecified fascicular block	Left posterior fascicular block	HP:0011711
+I44.6	Other and unspecified fascicular block	Left anterior fascicular block 	HP:0005172
+I44.7	Left bundle-branch block, unspecified	Left bundle branch block	HP:0011713
+I45.0	Right fascicular block	Intraventricular conduction delay	HP:0006677 
+I45.1	Other and unspecified right bundle-branch block	Right bundle branch block	HP:0011712
+I45.2	Bifascicular block	Right bundle branch block	HP:0011712
+I45.2	Bifascicular block	Left axis deviation	HP:0033568
+I45.3	Trifascicular block	Trifascicular block 	HP:0011715
+I45.4	Nonspecific intraventricular block	Intraventricular conduction delay	HP:0006677 
+I45.6	Pre-excitation syndrome	Ventricular preexcitation	HP:0004309
+I45.6	Pre-excitation syndrome	Ventricular preexcitation with multiple accessory pathways	HP:0006684
+I45.6	Pre-excitation syndrome	Wolff-Parkinson-White syndrome	HP:0001716
+I46.0	Cardiac arrest with successful resuscitation	Cardiac arrest	HP:0001695
+I46.1	Sudden cardiac death, so described	Sudden cardiac death	HP:0001645
+I46.9	Cardiac arrest, unspecified	Cardiac arrest	HP:0001695
+I47.0	Re-entry ventricular arrhythmia	Ventricular arrhythmia 	HP:0004308
+I47.2	Ventricular tachycardia	Ventricular tachycardia	HP:0004756
+I48	Atrial fibrillation and flutter	Atrial fibrillation	HP:0005110
+I48	Atrial fibrillation and flutter	Atrial flutter	HP:0004749
+I48.0	Paroxysmal atrial fibrillation	Atrial fibrillation	HP:0005110
+I48.1	Persistent atrial fibrillation	Permanent atrial fibrillation 	HP:0004754 
+I48.2	Chronic atrial fibrillation	Permanent atrial fibrillation	HP:0004754
+I48.3	Typical atrial flutter	Typical atrial flutter	HP:0031671
+I48.4	Atypical atrial flutter	Reverse typical atrial flutter	HP:0031672
+I48.9	Atrial fibrillation and atrial flutter, unspecified	Atrial fibrillation	HP:0005110
+I48.9	Atrial fibrillation and atrial flutter, unspecified	Atrial flutter	HP:0004749
+I49.0	Ventricular fibrillation and flutter	Ventricular fibrillation	HP:0001663
+I49.0	Ventricular fibrillation and flutter	Ventricular flutter	HP:0011841
+I49.5	Sick sinus syndrome	Sick sinus syndrome	HP:0011704
+I50.0	Congestive heart failure	Congestive heart failure	HP:0001635
+I50.1	Left ventricular failure	Abnormal left ventricular function 	HP:0005162
+I50.9	Heart failure, unspecified	Abnormal cardiac ventricular function	HP:0001635
