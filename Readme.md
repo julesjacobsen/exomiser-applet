@@ -145,3 +145,14 @@ Exomiser, DCM resources:
 The mappings files are in the `mappings/` directory. 
 
 These were curated by Marta Delfino (m.delfino@qmul.ac.uk/martadelfino23@gmail.com) and Tha Htet Nyi (t.nyi@qmul.ac.uk; Nay Aung's group). The original working file is this [google doc](https://docs.google.com/spreadsheets/d/1JvUMuTXYoY3G_OZ7RK8AjmB53r_W9trwM6u5Dv7Wur8/edit?usp=sharing).
+
+### Future options:
+
+Automated mappings. 
+- [Mapping Phecodes to UMLS CUIs](https://disgenet.com/gwas-harmonization-ukbiobank-disgenet)
+
+### Resources
+
+- [UKB DCM Shah et al 2022 paper](https://www.ahajournals.org/doi/full/10.1161/CIRCULATIONAHA.121.058143)
+- [ICD-10](https://icd.who.int/browse10/2019/en)
+- [HPO](https://hpo.jax.org/)
