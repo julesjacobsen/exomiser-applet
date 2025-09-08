@@ -6,6 +6,8 @@ This repo contains
 
 ## 1. Exomiser applet 
 
+The code for the applet is in the `exomiser/` directory.
+
 ### Using the applet: 
 
 The applet can be used on the command line (with [dx-toolkit](https://github.com/dnanexus/dx-toolkit)) or on the UI. 
@@ -137,3 +139,7 @@ Exomiser, DCM resources:
 
 
 ## 2. Curated HPO DCM mappings
+
+The mappings files are in the `mappings/` directory. 
+
+These were curated by Marta Delfino and Tha Htet Nyi (Nay Aung's group). 
