@@ -142,4 +142,4 @@ Exomiser, DCM resources:
 
 The mappings files are in the `mappings/` directory. 
 
-These were curated by Marta Delfino and Tha Htet Nyi (Nay Aung's group). 
+These were curated by Marta Delfino (m.delfino@qmul.ac.uk) and Tha Htet Nyi (t.nyi@qmul.ac.uk; Nay Aung's group). 
