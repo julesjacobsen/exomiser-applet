@@ -8,6 +8,8 @@ This repo contains
 
 The code for the applet is in the `exomiser/` directory.
 
+The first working version of the applet was created by Marta Delfino (m.delfino@qmul.ac.uk/martadelfino23@gmail.com).
+
 ### Using the applet: 
 
 The applet can be used on the command line (with [dx-toolkit](https://github.com/dnanexus/dx-toolkit)) or on the UI. 
@@ -142,4 +144,4 @@ Exomiser, DCM resources:
 
 The mappings files are in the `mappings/` directory. 
 
-These were curated by Marta Delfino (m.delfino@qmul.ac.uk) and Tha Htet Nyi (t.nyi@qmul.ac.uk; Nay Aung's group). 
+These were curated by Marta Delfino (m.delfino@qmul.ac.uk/martadelfino23@gmail.com) and Tha Htet Nyi (t.nyi@qmul.ac.uk; Nay Aung's group). The original working file is this [google doc](https://docs.google.com/spreadsheets/d/1JvUMuTXYoY3G_OZ7RK8AjmB53r_W9trwM6u5Dv7Wur8/edit?usp=sharing).
